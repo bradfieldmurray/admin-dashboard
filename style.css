@@ -9,9 +9,25 @@ body {
     background:black;
 }
 
+li {
+    list-style-type: none;
+    display:flex;
+    align-items: center;
+    font-size:0.7em;
+}
+
+a {
+    text-decoration:none;
+    color:inherit;
+}
+
+svg {
+    margin:8px 15px;
+}
+
 .container {
     display:grid;
-    grid-template-columns:150px 9fr;
+    grid-template-columns:200px 9fr;
 }
 
 
@@ -19,15 +35,21 @@ body {
     background-color:rgb(0, 148, 197);
     color:white;
     font-weight:bold;
-    font-size:15px;
+    font-size:18px;
+    display:grid;
+    gap:10px;
+    grid-template-rows:autofill;
 }
 
 .nav-header {
     display:flex;
     justify-content: flex-start;
     align-items:center;
-    column-gap:10px;
-    padding:10px 5px;
+}
+
+.nav-main,
+.nav-misc {
+    padding:7px;
 }
 
 .content {
