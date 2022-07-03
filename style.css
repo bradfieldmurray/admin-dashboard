@@ -25,6 +25,16 @@ svg {
     margin:8px 15px;
 }
 
+button {
+    border-radius:10px;
+    background:deepskyblue;
+    width:75px;
+    padding: 5px 10px;
+    border:none;
+    color:white;
+    font-weight:bold;
+}
+
 #searchbar {
     border-radius: 10px;
     border: none;
@@ -94,8 +104,9 @@ svg {
 .header-top {
     display:grid;
     grid-template-columns:4fr 3fr;
+    column-gap:50px;
     align-items:center;
-    justify-content: spac;
+    justify-content: space-between;
 }
 
 .header-search-bar {
@@ -115,11 +126,19 @@ svg {
 .header-bottom {
     display:flex;
     justify-content: space-between;
+    padding-bottom:5px;
 }
 
 .header-bottom-left {
     display:flex;
     align-items:center;
+}
+
+.header-bottom-right {
+    display:grid;
+    align-items:center;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap:15px;
 }
 
 
