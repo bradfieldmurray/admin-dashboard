@@ -38,12 +38,20 @@ svg {
     border:1px solid deepskyblue;
 }
 
-#profile-picture {
+#profile-picture-small {
     width:30px;
     height:30px;
     border-radius:50%;
     background-color:darksalmon;
     margin: 0 10px;
+}
+
+#profile-picture-large {
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background-color:darksalmon;
+    margin: 0 20px;
 }
 
 .container {
@@ -59,11 +67,14 @@ svg {
     font-weight:bold;
     font-size:18px;
     display:grid;
+    grid-template-rows:1fr 5fr 6fr;
+    height:100vh;
 }
 
 .nav-header {
     display:grid;
     grid-template-columns:50px 50px;
+    align-items:center;
 }
 
 .nav-main,
@@ -100,6 +111,19 @@ svg {
     justify-content: end;
     align-items:center
 }
+
+.header-bottom {
+    display:flex;
+    justify-content: space-between;
+}
+
+.header-bottom-left {
+    display:flex;
+    align-items:center;
+}
+
+
+
 
 .content {
     display:grid;
