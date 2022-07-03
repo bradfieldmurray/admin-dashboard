@@ -25,10 +25,32 @@ svg {
     margin:8px 15px;
 }
 
+#searchbar {
+    border-radius: 10px;
+    border: none;
+    width:350px;
+    height:20px;
+    background-color: lightgray;
+}
+
+#searchbar:focus {
+    outline:none;
+    border:1px solid deepskyblue;
+}
+
+#profile-picture {
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    background-color:darksalmon;
+    margin: 0 10px;
+}
+
 .container {
     display:grid;
     grid-template-columns:200px 9fr;
 }
+
 
 
 .nav {
@@ -37,30 +59,52 @@ svg {
     font-weight:bold;
     font-size:18px;
     display:grid;
-    gap:10px;
-    grid-template-rows:autofill;
 }
 
 .nav-header {
-    display:flex;
-    justify-content: flex-start;
-    align-items:center;
+    display:grid;
+    grid-template-columns:50px 50px;
 }
 
 .nav-main,
 .nav-misc {
-    padding:7px;
+    padding: 7px;
+}
+
+
+
+
+.header {
+    display:grid;
+    grid-template-rows:50px 50px;
+    justify-content: space-between;
+}
+
+.header-top {
+    display:grid;
+    grid-template-columns:4fr 3fr;
+    align-items:center;
+    justify-content: spac;
+}
+
+.header-search-bar {
+    display:grid;
+    justify-content: start;
+    align-items: center;
+    grid-auto-flow: column;
+}
+
+.header-account-info {
+    display:grid;
+    grid-auto-flow:column;
+    justify-content: end;
+    align-items:center
 }
 
 .content {
     display:grid;
     grid-template-rows:2fr 9fr;
     background:white;
-}
-
-.header {
-    display:flex;
-    border:1px solid black;
 }
 
 .main-content {
